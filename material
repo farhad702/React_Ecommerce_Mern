@@ -1,3 +1,5 @@
 1. using express and mongoose
 npm i express dotenv mongoose
 
+2. nodemon
+npm i nodemon --save-dev
