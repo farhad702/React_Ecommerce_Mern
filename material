@@ -1,0 +1,3 @@
+1. using express and mongoose
+npm i express dotenv mongoose
+
