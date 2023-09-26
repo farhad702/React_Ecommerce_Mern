@@ -8,7 +8,7 @@ const productSchema = new mongoose.Schema({
         maxLength : [100, 'Product name cannot exceed 100 characters']
     },
     price :{
-        type:number,
+        type:Number,
         required : [true, 'Please enter product price'],
         maxLength:[5, 'Product name cannot exceed 5 characters'],
         default:0.0
@@ -39,10 +39,18 @@ const productSchema = new mongoose.Schema({
         required:[true, 'Please select category for this product'],
         enum:{
             values:[
-                'Heavy Lifting',
-                'Crawler Crane',
-                'Manlift',
-                'Crane'
+                'Electronics',
+                'Cameras',
+                'Laptop',
+                'Accessories',
+                'Headphones',
+                'Food',
+                "Books",
+                'Clothes/Shoes',
+                'Beauty/Health',
+                'Sports',
+                'Outdoor',
+                'Home'
             ],
             message:'Please select correct category for product'
         }
