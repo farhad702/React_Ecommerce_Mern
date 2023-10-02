@@ -3,3 +3,9 @@ npm i express dotenv mongoose
 
 2. nodemon
 npm i nodemon --save-dev
+
+3. 
+ npm i bcryptjs jsonwebtoken validator nodemailer
+
+ 4.
+ npm i cookie-parser body-parser
