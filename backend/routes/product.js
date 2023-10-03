@@ -3,7 +3,8 @@ const router = express.Router();
 
 const {getProducts, newProduct, getSingleProduct, updateProduct, deleteProduct} = require ('../controllers/productController');
 
-router.route('/products').get(getProducts);
+const { isAuthenticateUser } = require('../middlewares/auth');
+router.route('/products').get(isAuthenticateUser, getProducts);
 router.route('/product/:id').get(getSingleProduct);
 
 router.route('/product/new').post(newProduct);
